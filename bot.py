@@ -23,6 +23,8 @@ import tweepy
 from secrets import *
 from time import gmtime, strftime
 
+from util import *
+
 
 # ====== Individual bot configuration ==========================
 bot_username = 'dungeon_exe'
@@ -33,7 +35,7 @@ logfile_name = bot_username + ".log"
 
 def create_tweet():
     """Create the text of the tweet you want to send."""
-    text = "Hello world! The time is " + theTime + "!"
+    text = helloTime()
     return text
 
 
